@@ -1,0 +1,150 @@
+css
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Site Header Styles */
+
+.site-header {
+  background-color: #333;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+
+.logo-link {
+  grid-column: 1;
+  margin-right: 20px;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+/* Site Navigation Styles */
+
+.site-nav {
+  background-color: #333;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ccc;
+}
+
+.nav-link.active {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Mobile Navigation Styles */
+
+.mobile-nav {
+  display: none;
+  background-color: #333;
+  padding: 1em;
+  position: relative;
+}
+
+.mobile-nav-toggle {
+  background-color: #333;
+  padding: 1em;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.mobile-nav-toggle-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.mobile-nav-toggle-img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.mobile-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #333;
+  padding: 1em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.mobile-nav-item {
+  margin-bottom: 10px;
+}
+
+.mobile-nav-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.mobile-nav-link:hover {
+  color: #ccc;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .site-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+  .mobile-nav-toggle {
+    display: block;
+  }
+  .mobile-nav-list {
+    display: block;
+  }
+}
