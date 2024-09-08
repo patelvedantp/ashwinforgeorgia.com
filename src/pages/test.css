@@ -1,432 +1,142 @@
-@font-face { 
-    font-display:fallback;
-    font-family:Source Sans Pro Web;
-    font-style:normal;
-    font-weight:300;
-    src:url(https://ashwinforgeorgia.com/static/sourcesanspro-light-webfont-e5f1a42e1c2b97e2587641dea75c548f.woff2) format("woff2"),url(https://ashwinforgeorgia.com/static/sourcesanspro-light-webfont-70e7d719e258c9a7e68b19236a49bcc4.woff) format("woff"),url(https://ashwinforgeorgia.com/static/sourcesanspro-light-webfont-d6f73cf7210d3b5c2fa95f00e38396a2.ttf) format("truetype");
-  } 
-  @font-face { 
-    font-display:fallback;
-    font-family:Source Sans Pro Web;
-    font-style:normal;
-    font-weight:400;
-    src:url(https://ashwinforgeorgia.com/static/sourcesanspro-regular-webfont-e7bccfa631a0017f31da9e0c2fd2627b.woff2) format("woff2"),url(https://ashwinforgeorgia.com/static/sourcesanspro-regular-webfont-c4e25ab10baa365dfc6620c04ea9202b.woff) format("woff"),url(https://ashwinforgeorgia.com/static/sourcesanspro-regular-webfont-5acfe0d0f69444765ba489e2091c95cc.ttf) format("truetype");
-  } 
-  @font-face { 
-    font-display:fallback;
-    font-family:Source Sans Pro Web;
-    font-style:normal;
-    font-weight:700;
-    src:url(https://ashwinforgeorgia.com/static/sourcesanspro-bold-webfont-4a1efbe82eaa84ff89ed34a0bd374991.woff2) format("woff2"),url(https://ashwinforgeorgia.com/static/sourcesanspro-bold-webfont-e7e051e1bc64fa89931760a52d0c8bd3.woff) format("woff"),url(https://ashwinforgeorgia.com/static/sourcesanspro-bold-webfont-9a76932911f04be25044af15855ffeb2.ttf) format("truetype");
-  } 
-  @font-face { 
-    font-display:fallback;
-    font-family:Source Sans Pro Web;
-    font-style:italic;
-    font-weight:300;
-    src:url(https://ashwinforgeorgia.com/static/sourcesanspro-lightitalic-webfont-9c5bf2190b2471c2f22b96bb92249ecb.woff2) format("woff2"),url(https://ashwinforgeorgia.com/static/sourcesanspro-lightitalic-webfont-455d120362f79aa219d465e39fc66e82.woff) format("woff"),url(https://ashwinforgeorgia.com/static/sourcesanspro-lightitalic-webfont-43ea3d39e6aa59fb6f1b4f974dfdc76b.ttf) format("truetype");
-  } 
-  @font-face { 
-    font-display:fallback;
-    font-family:Source Sans Pro Web;
-    font-style:italic;
-    font-weight:400;
-    src:url(https://ashwinforgeorgia.com/static/sourcesanspro-italic-webfont-c6c9fd228e87eefaf1d4e4d8f439760b.woff2) format("woff2"),url(https://ashwinforgeorgia.com/static/sourcesanspro-italic-webfont-0aaeabbaba38453310786c387d4a052a.woff) format("woff"),url(https://ashwinforgeorgia.com/static/sourcesanspro-italic-webfont-3efee318468995ac04affb6a907a6b03.ttf) format("truetype");
-  } 
-  @font-face { 
-    font-display:fallback;
-    font-family:Source Sans Pro Web;
-    font-style:italic;
-    font-weight:700;
-    src:url(https://ashwinforgeorgia.com/static/sourcesanspro-bolditalic-webfont-ef69f0d737406260319a2c5ec73da3a8.woff2) format("woff2"),url(https://ashwinforgeorgia.com/static/sourcesanspro-bolditalic-webfont-73021f1aabd43f50e16a6a0771c45689.woff) format("woff"),url(https://ashwinforgeorgia.com/static/sourcesanspro-bolditalic-webfont-af3dd40e0ac8e2ca50ac3943d5d7014d.ttf) format("truetype");
-  } 
-    body {  
-      font-family:Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
-      font-size:1.06rem;
-      line-height:.9;
-      background:#002c6d;
-      color:#1b1b1b;
-    }  
-  * { 
-      box-sizing: inherit;
-  } 
-  
-  * { 
-      font-family: DM Sans,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-  } 
-  
-  body { 
-      margin: 0;
-  } 
-  
-  body { 
-      background-color: #fff; 
-      color: #1b1b1b; 
-      overflow-x: hidden;
-  } 
-  
-  body { 
-      background: #002c6d;
-  } 
-  
-  html { 
-      -webkit-text-size-adjust: 100%; 
-      line-height: 1.15;
-  } 
-  
-  html { 
-      box-sizing: border-box;
-  } 
-  
-  html { 
-      font-feature-settings: "kern" 1; 
-      font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif; 
-      font-kerning: normal; 
-      font-size: 100%;
-  } 
-  
-  .usa-nav__inner { 
-      display: flex; 
-      max-width: none!important; 
-      padding-top: 20px;
-  } 
-  
-  @media (min-width: 64em){ 
-    .usa-nav__inner  { 
-      margin-left: auto; 
-      margin-right: auto; 
-      max-width: 64rem; 
-      padding-left: 1rem; 
-      padding-right: 1rem; 
-      position: relative;
-    } 
-  }     
-  
-  @media (min-width: 64em) and (min-width: 64em){ 
-    .usa-nav__inner  { 
-      padding-left: 2rem; 
-      padding-right: 2rem;
-    } 
-  }     
-  
-  *,:after,:before { 
-      box-sizing: inherit;
-  } 
-  
-  button { 
-      font-family: inherit; 
-      font-size: 100%; 
-      line-height: 1.15; 
-      margin: 0;
-  } 
-  
-  button { 
-      overflow: visible;
-  } 
-  
-  button { 
-      text-transform: none;
-  } 
-  
-  button { 
-      -webkit-appearance: button;
-  } 
-  
-  .usa-nav__close { 
-      -moz-osx-font-smoothing: inherit; 
-      -webkit-font-smoothing: inherit; 
-      background-color: transparent; 
-      background-image: none; 
-      border: 0; 
-      border-radius: 0; 
-      box-shadow: none; 
-      color: currentColor; 
-      flex: none; 
-      float: right; 
-      font-weight: 400; 
-      height: 3rem; 
-      margin: -.75rem -1rem 1rem auto; 
-      padding: 0; 
-      text-align: center; 
-      text-decoration: underline; 
-      width: 3rem;
-  } 
-  
-  @media (min-width: 64em){ 
-    .usa-nav__close { 
-      display: none;
-    } 
-  }     
-  
-  .usa-nav__close:hover { 
-      color: #1a4480;
-  } 
-  
-  .usa-nav__close:active,.usa-nav__close:hover { 
-      -moz-osx-font-smoothing: inherit; 
-      -webkit-font-smoothing: inherit; 
-      background-color: transparent; 
-      box-shadow: none; 
-      text-decoration: underline;
-  } 
-  
-  .usa-nav__close:hover { 
-      color: currentColor; 
-      text-decoration: none;
-  } 
-  
-  .usa-nav__close + *  { 
-      clear: both;
-  } 
-  
-  div.nav-list { 
-      flex: 1 1;
-  } 
-  
-  div.donate { 
-      flex: 1 1; 
-      justify-content: end; 
-      max-width: 200px;
-  } 
-  
-  img { 
-      border-style: none;
-  } 
-  
-  img { 
-      max-width: 100%;
-  } 
-  
-  .usa-nav__close img  { 
-      width: 1.5rem;
-  } 
-  
-  .usa-accordion { 
-      color: #1b1b1b; 
-      font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif; 
-      font-size: 1.06rem; 
-      line-height: 1.5; 
-      list-style-type: none; 
-      margin: 0; 
-      padding: 0; 
-      width: 100%;
-  } 
-  
-  @media (min-width: 64em){ 
-    .usa-nav__primary { 
-      display: flex;
-    } 
-  
-    .usa-nav__primary  { 
-      margin-left: -1rem;
-    } 
-  }     
-  
-  .usa-accordion  { 
-      font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif; 
-      font-size: 1.06rem; 
-      line-height: .9;
-  } 
-  
-  @media (min-width: 64em){ 
-    .usa-header--extended .usa-nav__primary::after { 
-      clear: both; 
-      content: ""; 
-      display: block;
-    } 
-  }     
-  
-  div.nav-list ul  { 
-      justify-content: end; 
-      margin-right: 30px;
-  } 
-  
-  a { 
-      background-color: transparent;
-  } 
-  
-  .usa-button { 
-      -webkit-appearance: none; 
-      appearance: none; 
-      background-color: #005ea2; 
-      border: 0; 
-      border-radius: .25rem; 
-      color: #fff; 
-      cursor: pointer; 
-      display: inline-block; 
-      font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif; 
-      font-size: 1.06rem; 
-      font-weight: 700; 
-      line-height: .9; 
-      margin-right: .5rem; 
-      padding: .75rem 1.25rem; 
-      text-align: center; 
-      text-decoration: none; 
-      width: 100%;
-  } 
-  
-  @media (min-width: 30em){ 
-    .usa-button { 
-      width: auto;
-    } 
-  }     
-  
-  .usa-button { 
-      background-color: #002c6d;
-  } 
-  
-  .usa-header a { 
-      border-bottom: none;
-  } 
-  
-  div.donate a  { 
-      background-color: #4d7fdd; 
-      font-weight: 700; 
-      letter-spacing: .25em;
-  } 
-  
-  .usa-button:visited { 
-      color: #fff;
-  } 
-  
-  @media (min-width: 64em){ 
-    .usa-nav__link  { 
-      padding-bottom: 1rem; 
-      padding-top: 1rem;
-    } 
-  }     
-  
-  .usa-nav__link.usa-button { 
-      color: #fff!important; 
-      margin: 5px;
-  } 
-  
-  .usa-button:hover { 
-      background-color: #1a4480; 
-      border-bottom: 0; 
-      color: #fff; 
-      text-decoration: none;
-  } 
-  
-  .usa-accordion > li  { 
-      margin-bottom: 0; 
-      max-width: unset;
-  } 
-  
-  li.usa-nav__primary-item { 
-      align-items: center; 
-      display: flex;
-  } 
-  
-  .usa-nav__primary > .usa-nav__primary-item  { 
-      line-height: 1.1;
-  } 
-  
-  @media (min-width: 64em){ 
-    .usa-nav__primary > .usa-nav__primary-item  { 
-      font-size: .93rem; 
-      line-height: .9;
-    } 
-  
-    .usa-nav__primary a  { 
-      padding-bottom: .5rem; 
-      padding-top: .5rem;
-    } 
-  }     
-  
-  .usa-nav__primary-item a  { 
-      color: #fff!important;
-  } 
-  
-  .usa-nav__primary .usa-nav__primary-item a  { 
-      text-decoration: none;
-  } 
-  
-  @media (min-width: 64em){ 
-    .usa-nav__primary > .usa-nav__primary-item > a  { 
-      color: #565c65; 
-      display: block; 
-      font-weight: 700; 
-      line-height: .9; 
-      padding: 1rem;
-    } 
-  }     
-  
-  .usa-nav__inner div.nav-title a  { 
-      padding: 0!important;
-  } 
-  
-  .usa-nav__inner div.nav-title a::after { 
-      display: none;
-  } 
-  
-  @media (min-width: 64em){ 
-    .usa-nav__primary > .usa-nav__primary-item > a:hover { 
-      color: #005ea2;
-    } 
-  }     
-  
-  div.nav-list ul li a  { 
-      font-feature-settings: "calt" 0,"lnum"; 
-      -webkit-text-size-adjust: none; 
-      -webkit-font-smoothing: antialiased; 
-      background-repeat: no-repeat; 
-      border-bottom: 3px solid #f75c5c; 
-      border-radius: 0; 
-      box-sizing: border-box; 
-      color: #fff; 
-      cursor: pointer; 
-      font-variant-numeric: lining-nums; 
-      font-weight: 700; 
-      letter-spacing: .25em; 
-      line-height: calc(.95em + 10px); 
-      list-style-type: none; 
-      margin: 0 1.6em 0 0; 
-      overflow-wrap: break-word; 
-      padding-bottom: .3em; 
-      tab-size: 4; 
-      text-align: left; 
-      text-decoration: none; 
-      text-transform: uppercase; 
-      transition: .2s; 
-      white-space: nowrap; 
-      word-break: break-word;
-  } 
-  
-  @media (min-width: 64em){ 
-    .usa-nav__primary-item > .usa-current  { 
-      position: relative;
-    } 
-  
-    .usa-header--extended .usa-nav__primary-item > .usa-current::after, .usa-header--extended .usa-nav__primary-item > .usa-nav__link:hover::after { 
-      background-color: #005ea2; 
-      border-radius: 0; 
-      bottom: 0; 
-      content: ""; 
-      display: block; 
-      height: .25rem; 
-      left: 1rem; 
-      position: absolute; 
-      right: 1rem;
-    } 
-  
-    .usa-nav__primary-item > .usa-current , .usa-header--extended .usa-nav__primary-item > .usa-nav__link:hover { 
-      position: relative;
-    } 
-  
-    .usa-header--extended .usa-nav__primary-item > .usa-current, .usa-header--extended .usa-nav__primary-item > .usa-nav__link:hover { 
-      position: relative;
-    } 
-  }     
-  
-  .usa-nav__inner div.nav-title img  { 
-      display: inline-block;
-  } 
-  
-  .usa-nav__inner div.nav-title img  { 
-      margin-bottom: 10px; 
-      max-width: 170px;
-  } 
-  
-  
-  
+/*! CSS Used from: Embedded */
+a{background-color:transparent;}
+img{border-style:none;}
+button{font-family:inherit;font-size:100%;line-height:1.15;margin:0;}
+button{overflow:visible;}
+button{text-transform:none;}
+button{-webkit-appearance:button;}
+[href]:focus,button:not([disabled]):focus{outline:.25rem solid #2491ff;outline-offset:0;}
+*,:after,:before{box-sizing:inherit;}
+.usa-button{-webkit-appearance:none;appearance:none;background-color:#005ea2;border:0;border-radius:.25rem;color:#fff;cursor:pointer;display:inline-block;font-family:Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;font-size:1.06rem;font-weight:700;line-height:.9;margin-right:.5rem;padding:.75rem 1.25rem;text-align:center;text-decoration:none;width:100%;}
+@media (min-width:30em){
+.usa-button{width:auto;}
+}
+.usa-button:visited{color:#fff;}
+.usa-button:hover{background-color:#1a4480;border-bottom:0;color:#fff;text-decoration:none;}
+.usa-button:active{background-color:#162e51;color:#fff;}
+.usa-button:not([disabled]):focus{outline-offset:.25rem;}
+.usa-button:disabled{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;background-color:#c9c9c9;color:#fff;}
+.usa-button:disabled:active,.usa-button:disabled:focus,.usa-button:disabled:hover{background-color:#c9c9c9;border:0;box-shadow:none;}
+img{max-width:100%;}
+.usa-accordion{color:#1b1b1b;font-family:Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;font-size:1.06rem;line-height:1.5;list-style-type:none;margin:0;padding:0;width:100%;}
+.usa-accordion>li{margin-bottom:0;max-width:unset;}
+.usa-header{font-family:Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;font-size:1.06rem;line-height:1.5;z-index:300;}
+.usa-header:after{clear:both;content:"";display:block;}
+.usa-header a{border-bottom:none;}
+@media (min-width:64em){
+.usa-header--extended{padding-top:0;}
+.usa-header--extended .usa-nav__primary-item>.usa-current,.usa-header--extended .usa-nav__primary-item>.usa-nav__link:hover{position:relative;}
+.usa-header--extended .usa-nav__primary-item>.usa-current:after,.usa-header--extended .usa-nav__primary-item>.usa-nav__link:hover:after{background-color:#005ea2;border-radius:0;bottom:0;content:"";display:block;height:.25rem;left:1rem;position:absolute;right:1rem;}
+}
+@media (min-width:64em)and (forced-colors:active){
+.usa-header--extended .usa-nav__primary-item>.usa-current:after,.usa-header--extended .usa-nav__primary-item>.usa-nav__link:hover:after{background-color:ButtonText;}
+}
+@media (min-width:64em){
+.usa-header--extended .usa-nav{border-top:1px solid #dfe1e2;padding:0;width:100%;}
+.usa-header--extended .usa-nav__inner{margin-left:auto;margin-right:auto;max-width:64rem;padding-left:1rem;padding-right:1rem;position:relative;}
+}
+@media (min-width:64em)and (min-width:64em){
+.usa-header--extended .usa-nav__inner{padding-left:2rem;padding-right:2rem;}
+}
+@media (min-width:64em){
+.usa-header--extended .usa-nav__primary{margin-left:-1rem;}
+.usa-header--extended .usa-nav__primary:after{clear:both;content:"";display:block;}
+.usa-header--extended .usa-nav__link{padding-bottom:1rem;padding-top:1rem;}
+}
+.usa-nav{font-family:Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;font-size:1.06rem;line-height:.9;}
+@media (max-width:63.99em){
+.usa-nav{background:#fff;border-right:0;bottom:0;display:none;flex-direction:column;overflow-y:auto;padding:1rem;position:absolute;position:fixed;right:0;top:0;width:15rem;z-index:500;}
+}
+@media (min-width:64em){
+.usa-nav{float:right;position:relative;}
+}
+.usa-nav .usa-accordion{font-family:Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;font-size:1.06rem;line-height:.9;}
+@media (max-width:63.99em){
+.usa-nav__primary{list-style-type:none;margin-bottom:0;margin-top:1.5rem;order:2;padding-left:0;}
+.usa-nav__primary>li{margin-bottom:0;max-width:unset;}
+.usa-nav__primary-item{border-top:1px solid #dfe1e2;}
+.usa-nav__primary a:not(.usa-button){display:block;padding:.5rem 1rem;text-decoration:none;}
+.usa-nav__primary a:not(.usa-button):hover{background-color:#f0f0f0;text-decoration:none;}
+.usa-nav__primary a:not(.usa-button):not(.usa-current){color:#565c65;}
+.usa-nav__primary a:not(.usa-button):not(.usa-current):hover{color:#005ea2;}
+.usa-nav__primary a:not(.usa-button):not(.usa-current):focus{outline-offset:0;}
+.usa-nav__primary .usa-current{color:#005ea2;font-weight:700;position:relative;}
+.usa-nav__primary .usa-current:after{background-color:#005ea2;border-radius:99rem;bottom:.25rem;content:"";display:block;left:.25rem;position:absolute;top:.25rem;width:.25rem;}
+}
+@media (max-width:63.99em)and (forced-colors:active){
+.usa-nav__primary .usa-current:after{background-color:ButtonText;}
+}
+@media (max-width:63.99em)and (min-width:40em){
+.usa-nav__primary .usa-current{position:relative;}
+.usa-nav__primary .usa-current:after{background-color:#005ea2;border-radius:99rem;bottom:.25rem;content:"";display:block;left:0;position:absolute;top:.25rem;width:.25rem;}
+}
+@media (max-width:63.99em)and (min-width:40em)and (forced-colors:active){
+.usa-nav__primary .usa-current:after{background-color:ButtonText;}
+}
+@media (max-width:63.99em){
+.usa-nav__primary a{padding-bottom:.75rem;padding-top:.75rem;}
+}
+@media (min-width:64em){
+.usa-nav__primary{display:flex;}
+}
+.usa-nav__primary .usa-nav__primary-item a{text-decoration:none;}
+.usa-nav__primary>.usa-nav__primary-item{line-height:1.1;}
+@media (min-width:64em){
+.usa-nav__primary>.usa-nav__primary-item{font-size:.93rem;line-height:.9;}
+.usa-nav__primary>.usa-nav__primary-item>a{color:#565c65;display:block;font-weight:700;line-height:.9;padding:1rem;}
+.usa-nav__primary>.usa-nav__primary-item>a:hover{color:#005ea2;}
+.usa-nav__primary a{padding-bottom:.5rem;padding-top:.5rem;}
+}
+.usa-nav__close{-moz-osx-font-smoothing:inherit;-webkit-font-smoothing:inherit;background-color:transparent;background-image:none;border:0;border-radius:0;box-shadow:none;color:#005ea2;color:currentColor;flex:none;float:right;font-weight:400;height:3rem;margin:-.75rem -1rem 1rem auto;padding:0;text-align:left;text-align:center;text-decoration:underline;width:3rem;}
+.usa-nav__close:visited{color:#54278f;}
+.usa-nav__close:hover{color:#1a4480;}
+.usa-nav__close:active{color:#162e51;}
+.usa-nav__close:focus{outline:.25rem solid #2491ff;outline-offset:0;}
+.usa-nav__close:active,.usa-nav__close:disabled,.usa-nav__close:disabled:active,.usa-nav__close:disabled:focus,.usa-nav__close:disabled:hover,.usa-nav__close:hover{-moz-osx-font-smoothing:inherit;-webkit-font-smoothing:inherit;background-color:transparent;box-shadow:none;text-decoration:underline;}
+.usa-nav__close:disabled{color:#c9c9c9;}
+@media (forced-colors:active){
+.usa-nav__close:before{background:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTE5IDYuNDEgMTcuNTkgNSAxMiAxMC41OSA2LjQxIDUgNSA2LjQxIDEwLjU5IDEyIDUgMTcuNTkgNi40MSAxOSAxMiAxMy40MSAxNy41OSAxOSAxOSAxNy41OSAxMy40MSAxMnoiLz48L3N2Zz4=) no-repeat 50%/contain;content:"";display:inline-block;height:1.25rem;margin-right:auto;vertical-align:middle;width:1.25rem;}
+.usa-nav__close:before{background-color:buttonText;}
+}
+.usa-nav__close:hover{color:currentColor;text-decoration:none;}
+@media (min-width:64em){
+.usa-nav__close{display:none;}
+}
+.usa-nav__close img{width:1.5rem;}
+@media (forced-colors:active){
+.usa-nav__close img{display:none;}
+}
+.usa-nav__close+*{clear:both;}
+.hidden-desktop{display:none;}
+@media screen and (max-width:64em){
+.hidden-desktop{display:block;}
+}
+*{font-family:DM Sans,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;}
+.usa-button{background-color:#002c6d;}
+li.usa-nav__primary-item{align-items:center;display:flex;}
+.usa-nav__link.usa-button{color:#fff!important;margin:5px;}
+.usa-nav__inner{display:flex;max-width:none!important;padding-top:20px;}
+.usa-nav__inner div.nav-title a{padding:0!important;}
+.usa-nav__inner div.nav-title a:after{display:none;}
+.usa-nav__inner div.nav-title img{display:inline-block;}
+.usa-nav__inner div.nav-title img{margin-bottom:10px;max-width:170px;}
+div.donate{flex:1 1;justify-content:end;max-width:200px;}
+div.donate a{background-color:#4d7fdd;font-weight:700;letter-spacing:.25em;}
+.nav-mobile{padding:20px 0;}
+.nav-mobile .nav-list{text-align:center;}
+.nav-mobile .nav-list>div{display:inline-block;margin:auto;}
+.nav-mobile div.donate{margin:5px;}
+.nav-mobile div.donate a{margin:0;}
+.nav-mobile img{display:block;margin:10px auto 20px;max-width:300px;}
+div.nav-list{flex:1 1;}
+div.nav-list ul{justify-content:end;margin-right:30px;}
+div.nav-list ul li a{font-feature-settings:"calt" 0,"lnum";-webkit-text-size-adjust:none;-webkit-font-smoothing:antialiased;background-repeat:no-repeat;border-bottom:3px solid #f75c5c;border-radius:0;box-sizing:border-box;color:#fff;cursor:pointer;font-variant-numeric:lining-nums;font-weight:700;letter-spacing:.25em;line-height:calc(.95em + 10px);list-style-type:none;margin:0 1.6em 0 0;overflow-wrap:break-word;padding-bottom:.3em;tab-size:4;text-align:left;text-decoration:none;text-transform:uppercase;transition:.2s;white-space:nowrap;word-break:break-word;}
+header.usa-header{background:#002c6d;}
+.usa-nav__primary-item a{color:#fff!important;}
+/*! CSS Used fontfaces */
+@font-face{font-display:fallback;font-family:Source Sans Pro Web;font-style:normal;font-weight:300;src:url(https://ashwinforgeorgia.com/static/sourcesanspro-light-webfont-e5f1a42e1c2b97e2587641dea75c548f.woff2) format("woff2"),url(https://ashwinforgeorgia.com/static/sourcesanspro-light-webfont-70e7d719e258c9a7e68b19236a49bcc4.woff) format("woff"),url(https://ashwinforgeorgia.com/static/sourcesanspro-light-webfont-d6f73cf7210d3b5c2fa95f00e38396a2.ttf) format("truetype");}
+@font-face{font-display:fallback;font-family:Source Sans Pro Web;font-style:normal;font-weight:400;src:url(https://ashwinforgeorgia.com/static/sourcesanspro-regular-webfont-e7bccfa631a0017f31da9e0c2fd2627b.woff2) format("woff2"),url(https://ashwinforgeorgia.com/static/sourcesanspro-regular-webfont-c4e25ab10baa365dfc6620c04ea9202b.woff) format("woff"),url(https://ashwinforgeorgia.com/static/sourcesanspro-regular-webfont-5acfe0d0f69444765ba489e2091c95cc.ttf) format("truetype");}
+@font-face{font-display:fallback;font-family:Source Sans Pro Web;font-style:normal;font-weight:700;src:url(https://ashwinforgeorgia.com/static/sourcesanspro-bold-webfont-4a1efbe82eaa84ff89ed34a0bd374991.woff2) format("woff2"),url(https://ashwinforgeorgia.com/static/sourcesanspro-bold-webfont-e7e051e1bc64fa89931760a52d0c8bd3.woff) format("woff"),url(https://ashwinforgeorgia.com/static/sourcesanspro-bold-webfont-9a76932911f04be25044af15855ffeb2.ttf) format("truetype");}
+@font-face{font-display:fallback;font-family:Source Sans Pro Web;font-style:italic;font-weight:300;src:url(https://ashwinforgeorgia.com/static/sourcesanspro-lightitalic-webfont-9c5bf2190b2471c2f22b96bb92249ecb.woff2) format("woff2"),url(https://ashwinforgeorgia.com/static/sourcesanspro-lightitalic-webfont-455d120362f79aa219d465e39fc66e82.woff) format("woff"),url(https://ashwinforgeorgia.com/static/sourcesanspro-lightitalic-webfont-43ea3d39e6aa59fb6f1b4f974dfdc76b.ttf) format("truetype");}
+@font-face{font-display:fallback;font-family:Source Sans Pro Web;font-style:italic;font-weight:400;src:url(https://ashwinforgeorgia.com/static/sourcesanspro-italic-webfont-c6c9fd228e87eefaf1d4e4d8f439760b.woff2) format("woff2"),url(https://ashwinforgeorgia.com/static/sourcesanspro-italic-webfont-0aaeabbaba38453310786c387d4a052a.woff) format("woff"),url(https://ashwinforgeorgia.com/static/sourcesanspro-italic-webfont-3efee318468995ac04affb6a907a6b03.ttf) format("truetype");}
+@font-face{font-display:fallback;font-family:Source Sans Pro Web;font-style:italic;font-weight:700;src:url(https://ashwinforgeorgia.com/static/sourcesanspro-bolditalic-webfont-ef69f0d737406260319a2c5ec73da3a8.woff2) format("woff2"),url(https://ashwinforgeorgia.com/static/sourcesanspro-bolditalic-webfont-73021f1aabd43f50e16a6a0771c45689.woff) format("woff"),url(https://ashwinforgeorgia.com/static/sourcesanspro-bolditalic-webfont-af3dd40e0ac8e2ca50ac3943d5d7014d.ttf) format("truetype");}
